@@ -1,3 +1,5 @@
+//tenjoufire
+
 package random1;
 
 import java.awt.BorderLayout;
