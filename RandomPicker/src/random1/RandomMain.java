@@ -12,9 +12,6 @@ import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -174,11 +171,12 @@ public class RandomMain extends JFrame  implements ActionListener{
 
 	//ファイルにメンバーを追加
 	public void addMember() throws IOException{
-		File file = new File("bin/memberList.txt");
-		pw = new PrintWriter(new BufferedWriter(new FileWriter(file,true)));
-		pw.println(inText.getText());
-		member.add(inText.getText());
-		pw.close();
+		//File file = new File("bin/memberList.txt");
+		//pw = new PrintWriter(new BufferedWriter(new FileWriter(file,true)));
+		//pw.println(inText.getText());
+		if(!inText.getText().equals(""))
+			member.add(inText.getText());
+		//pw.close();
 	}
 
 	public void addKawakatsu(){
