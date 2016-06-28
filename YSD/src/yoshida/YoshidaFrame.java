@@ -75,7 +75,7 @@ public class YoshidaFrame extends JFrame  implements ActionListener{
 				break;
 			}
 			try{
-				Thread.sleep(30); //3000ミリ秒Sleepする
+				Thread.sleep(30); //30ミリ秒Sleepする
 				}catch(InterruptedException e){}
 
 		}
