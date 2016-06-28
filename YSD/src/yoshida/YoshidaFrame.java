@@ -63,7 +63,7 @@ public class YoshidaFrame extends JFrame  implements ActionListener{
 			i++;
 			if(i % 29 == 0) System.out.println("");
 			if(ysd.equals("YSD")){
-				System.out.println("何やってくれてるんだよっ！");
+				System.out.println("何やってくれてるんだYO！");
 				break;
 			}
 			if(ysd.equals("SSD")){
